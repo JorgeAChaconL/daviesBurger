@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Davie's Burger</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img
+        src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg"
+        alt="Davie's Burgers Logo"
+        id="logo"
+      />
+      <hr />
+      <form>
+        <h1>Create a Burger!</h1>
+        <section class="protein">
+          <label for="patty">What type of protein would you like to add?</label>
+          <input type="text" name="patty" id="patty" value="beef" />
+        </section>
+        <hr />
+
+        <section class="patties">
+            <label for="amount"> How many patties would you like? </label>
+            <input type="number" name="amount" id="amount" value="1" />
+        </section>
+        
+        <section class="cooked">
+            <label for="for donesses">How do you want your patty cooked</label>
+            <br>
+            <span>Rare</span>
+            <input type="range" name="donesses" id="donesses" min="0" max="5" step="0.5" value="2.5">
+            <span>Well-Done</span>
+        </section>
+
+        <section class="toppings">
+            <span>What toppings would you like?</span>
+            <br>
+
+            <input type="checkbox" name="Lettuce" id="lettuce" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+
+            
+            <input type="checkbox" name="Tomato" id="tomato" value="tomato">
+            <label for="tomato">Tomato</label>
+
+            <input type="checkbox" name="Onion" id="onion" value="onion">
+            <label for="onion">Onion</label>
+
+            <input type="checkbox" name="Mayo" id="mayo" value="mayo">
+            <label for="mayo">Mayo</label>
+        </section>
+        <section>
+            <span>Would you like to add cheese?</span>
+            <br>
+
+            <input type="radio" name="cheese" id="yes" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="cheese" id="no" value="no">
+            <label for="no">No</label>
+        </section>
+        <hr>
+        <section for="bun">What type of Bun would you like?</section>
+        <select name="bun" id="bun">
+            <option value="sesame">Sesame</option>
+            <option value="potato">Potato</option>
+            <option value="butter">Butter</option>
+            <option value="garlic">Garlic</option>
+        </select>
+      </form>
+    </section>
+  </body>
+</html>

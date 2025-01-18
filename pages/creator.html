@@ -49,9 +49,10 @@
             <input type="checkbox" name="Onion" id="onion" value="onion">
             <label for="onion">Onion</label>
 
-            <input type="checkbox" name="Mayo" id="mayo" value="mayo">
-            <label for="mayo">Mayo</label>
+            <input type="checkbox" name="Pineapple" id="pineaplle" value="pineapple">
+            <label for="mayo">Pineapple</label>
         </section>
+        <hr>
         <section>
             <span>Would you like to add cheese?</span>
             <br>
@@ -63,6 +64,16 @@
             <label for="no">No</label>
         </section>
         <hr>
+        <section name="bacon">
+            <label for="bacon">Would you like to add a portion of bacon? ($1us extra)</label>
+            <br>
+            <input type="radio" name="bacon" id="bacon" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="bacon" id="no" value="no">
+            <label for="no">No</label>
+
+        </section>
+        <hr>
         <section for="bun">What type of Bun would you like?</section>
         <select name="bun" id="bun">
             <option value="sesame">Sesame</option>
@@ -70,6 +81,36 @@
             <option value="butter">Butter</option>
             <option value="garlic">Garlic</option>
         </select>
+
+        <section class="sauce-selection">
+            <label for="sauce">What type of sauce would youn like </label>
+            <input type="text" list="sauces" id="sauce" name="sauce">
+            <datalist id="sauces">
+                <option value="ketchup">100% organic</option>
+                <option value="mayo">Free of animal cruelty</option>
+                <option value="chipotle">For those who love spiccy🔥</option>
+                <option value="mustard">Just mustard</option>
+            </datalist>
+        </section>
+
+
+        <section class="extra-info">
+            <label for="extra">Add some specific details, dont worry if they are imposible, we won't do them</label>
+            <textarea name="extra" id="extra" cols="40" rows="3" placeholder="Add your details here!"></textarea>
+        </section>
+
+        <section name="appetizers">
+            <span>Would you like to add a side?</span>
+            <br>
+            <input type="checkbox" name="fries" id="fries" value="fries">
+            <label for="fries">Yes, Fries, please!</label>
+            <input type="checkbox" name="onion-rings" id="onion-rings" value="onion-rings">
+            <label for="onion-rings">Yes, onion Rings too!</label>
+        </section>
+
+        <section class="submission">
+            <input type="submit" value="Submit" formaction="submission.html">
+        </section>
       </form>
     </section>
   </body>
